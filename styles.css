@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Quattrocento:wght@400;700&family=Ruda:wght@400..900&display=swap');
+body{
+    font-family: "ABeeZee", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    line-height: 1.4;
+    box-sizing: border-box;
+    
+}
+
+header{
+    height: 100vh;
+    /* background-color: hsl(30 100% 80%); */
+    padding-bottom: 100px;
+   
+   
+}
+
+ nav{
+    position: fixed;
+    max-width:1640px;
+    z-index: 99999;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0 0% 95% /.9);
+    gap:16px;
+    align-items: center;
+    /* border:solid; */
+    padding:8px 20px;
+    color:hsl(249, 35%, 15%);
+}
+nav::after{
+    content: 'Next batch starts in ⌛ 22 Days, Hurry!  ️';
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    padding:8px 0;
+    background-color: hsla(214, 84%, 56%, 1);
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+nav h1{
+    font-size: 2rem;
+}
+nav .icons{
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+nav ul{
+   
+    margin-top: 12px;
+    list-style: none;
+    position: absolute;
+    padding: 6px;
+    background-color: inherit;
+    left: -950px;
+    opacity: 0;
+    top:70px;
+    width:100%;
+    transition: left 1.5s cubic-bezier(0,.93,0,1.04), opacity .7s ease-in;
+    text-align: center;
+}
+nav ul li{
+    font-size: 1.5rem;
+    margin-top: 5px 0 5px;
+    padding: 4px 12px;
+    transition: background-color .4s ease;
+    cursor: pointer;
+    border-radius: 200px;
+    /* width: fit-content;
+    margin: 0 auto; */
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:hsl(249, 35%, 15%);
+
+}
+
+.hide{
+    display: none;
+}
+.orignal-position{
+    left:0px;
+    opacity: 1;
+}
+
+
+
+nav .icons-social{
+    display: none;
+}
+
+@media (pointer:fine){
+    ul li:hover{
+        background-color:hsla(214, 84%, 70%, 1);
+        outline: 3px solid hsl(319, 45%, 85%);
+        
+        outline-offset: 3px;
+    }
+    ul li:active{
+        background-color: hsl(276, 35%, 45%);
+        
+    }
+}
+
+@media (max-width:330px){
+    nav h1{
+        font-size: 1.3rem;
+    }
+   nav .icons{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:1250px){
+    nav{
+        grid-template-columns: 1fr 2fr;
+    }
+    nav h1{
+        
+        text-align: center;
+    }
+    .icons{
+        display: none;
+    }
+    nav ul{
+        position: initial;
+        
+        display: flex;
+        gap: 10px;   
+        justify-content: center;
+        background-color: hsl(0 0% 95% /.9);
+        opacity:1;
+    }
+
+    nav .icons-social{
+        display: initial;
+        font-size: 1.7rem;
+        text-align: center;
+        
+    }
+    nav .icons-social i{
+        margin-right: 16px;
+    }
+    
+
+}
+
+
+ .content {
+    padding-top: 200px;
+    
+    
+    display: grid;
+   grid-template-columns: 3fr 1fr;
+}
+
+.content .left h1{
+    font-size: 50px;
+    font-style: italic;
+}
+.content .left p{
+    font-size: 18px;
+    color:
+    hsla(0, 0%, 35%, 1);    
+}
+.content .left h1 span{
+    color: 
+    hsla(214, 84%, 56%, 1);
+}
+.content .left{
+    justify-self:center;
+    max-width: 650px;
+}
+.card-header{
+    justify-self: center;
+}
+
+.feature-wrapper{
+    display: flex;
+    
+    
+}
+.feature-wrapper img{
+    margin-left: -50px;
+}
+
+.img-wrapper img{
+   
+    margin-top: -200px;
+    
+ 
+}
+
+
+.gradiant{
+    background: linear-gradient(
+              hsla(274, 84%, 56%, 1),
+              hsla(214, 84%, 56%, 1)
+            );
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+}
