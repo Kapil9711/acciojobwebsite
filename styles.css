@@ -12,9 +12,9 @@ body{
 }
 
 header{
-    height: 100vh;
+    min-height: 100vh;
     /* background-color: hsl(30 100% 80%); */
-    padding-bottom: 100px;
+    padding-bottom: 0px;
    
    
 }
